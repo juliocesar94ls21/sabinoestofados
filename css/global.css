@@ -145,9 +145,6 @@ svg {
 .paragraf-qs{
   font-weight: 300;
 }
-.elem-qs-item{
-  line-height: 1px;
-}
 .elem-qs-item i{
   color: #000000;
   font-size: 22px;
@@ -271,4 +268,40 @@ svg {
 }
 .img-logo{
   margin-top: 5px;
+}
+@media screen and (max-width: 992px){
+  .nav-header-prt{
+    display: grid;
+  }
+  .nav-header-prt li a{
+    color: #fff;
+  }
+  .col-nav-header{
+    position: absolute;
+    background-color: #212b36;
+    width: fit-content;
+    right: 0px;
+    top: 60px;
+    display: none;
+  }
+  .fa-menu{
+    display: block;
+    color: #000000;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    z-index: 99999999999999999999999;
+  }
+  .content-destaque-bg h1{
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 993px) {
+  .fa-menu{
+    display: none;
+  }
+  .nav-header-prt{
+    display: block;
+  }
 }

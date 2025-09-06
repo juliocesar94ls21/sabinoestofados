@@ -24,7 +24,7 @@
         <link href="bootstrap/css/bootstrap.min.css?v1.2" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="css/global.css?v3.2" rel="stylesheet">
+        <link href="css/global.css?v3.4" rel="stylesheet">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
@@ -38,6 +38,9 @@
 
     <body>
         <div id="Home" class="nav-header container-fluid">
+            <span class="fa-menu">
+                <i class="fa-solid fa-bars"></i>
+            </span>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -325,6 +328,11 @@
         <script>
             $(function() {
             $("#accordion").accordion();
+
+            $(".fa-menu").on("click", function(){
+                $(".col-nav-header").toggle("slow");
+            });
+
             });
         </script>
 
